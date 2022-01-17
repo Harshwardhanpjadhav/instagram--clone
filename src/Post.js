@@ -1,13 +1,22 @@
 import React from "react";
 import "./Post.css";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
+
 
 export default function Post(props) {
   return (
     <div className="post">
       {/* username and icon */}
       <header className="post-header">
-        <AccountCircleIcon className="account-circle" />
+       
+        <Stack direction="row" spacing={3} className="account-circle">
+         <Avatar
+        alt={props.username}
+        src={props.imageUrl}
+        sx={{ width: 46, height: 46 }}
+      />
+    </Stack>
         {props.username}
       </header>
 
