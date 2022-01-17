@@ -1,7 +1,9 @@
-.app {
+.App {
   background-color: #fafafa;
 }
 .app--header {
+  width: 100%;
+  object-fit: contain;
   background-color: #fff;
   border-bottom: 1px solid lightgray;
   align-items: center;
@@ -12,7 +14,7 @@
   max-width: 100%;
   object-fit: contain;
   padding:10px;
-  margin-left: 103px;
+  
 }
 .header-search{
   
